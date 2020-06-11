@@ -1,7 +1,7 @@
 ## Create SLS project
 >sls create \\ \
->  --template aws-python3 \
->  --name PROJECTNAME \
+>  --template aws-python3 \\ \
+>  --name PROJECTNAME \\ \
 >  --path DIRECTORYNAME
 
 CD into project folder
