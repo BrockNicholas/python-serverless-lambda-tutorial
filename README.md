@@ -22,7 +22,8 @@ CD into project folder
 
 Update variables in handler.py
 
-At the bottom toolbar of VSCode, change the python interpreter to the `venv` version
+At the bottom toolbar of VSCode, change the python interpreter to the `venv` version. \
+This will make sure the editor is working with the version you're using in your virtual environment.
 
 Update serverless.yml file
 
@@ -52,7 +53,7 @@ Update serverless.yml file
 `npm install --save serverless-python-requirements` \
 \
 `pip install INCLUDEDPACKAGES` \
-`pip freeze > requirements.txt` \
+`pip freeze > requirements.txt` 
 
 ### Run locally
 `python handler.py`
@@ -68,9 +69,9 @@ Update serverless.yml file
 
 
 ## Put any parameters you want to send to your function in a .json file
-`{
-  "arg": ""
-}`
+>{
+>&nbsp;&nbsp;"arg": ""
+>}
 
 ### Test SLS locally
 `sls invoke --function FUNCTIONNAME --path JSONTESTFILENAME.json`
