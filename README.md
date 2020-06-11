@@ -37,9 +37,9 @@ Update serverless.yml file
 >
 >package:
 >  include:
->    - PACKAGENAME.py
+>    \- PACKAGENAME.py
 >  exclude:
->    - a/**
+>    \- a/**
 >
 >functions:
 >  FUNCTIONNAME:
