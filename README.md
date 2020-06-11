@@ -48,11 +48,11 @@ Update serverless.yml file
 
 
 ## Install packages
-`npm init`
-`npm install --save serverless-python-requirements`
-
-`pip install INCLUDEDPACKAGES`
-`pip freeze > requirements.txt`
+`npm init` \
+`npm install --save serverless-python-requirements` \
+\
+`pip install INCLUDEDPACKAGES` \
+`pip freeze > requirements.txt` \
 
 ### Run locally
 `python handler.py`
