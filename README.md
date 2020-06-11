@@ -31,7 +31,7 @@ service: SERVICENAME
 
 provider:
 &nbsp;&nbsp;name: aws
-&nbsp;&nbsp;&nbsp;&nbsp;runtime: python{VERSIONNUMBER} <pre>#</pre> (e.g., python3.6)
+&nbsp;&nbsp;&nbsp;&nbsp;runtime: python{VERSIONNUMBER} # (e.g., python3.6)
 
 plugins:
 &nbsp;&nbsp;- serverless-python-requirements
