@@ -55,7 +55,7 @@ Update serverless.yml file
 `pip install INCLUDEDPACKAGES` \
 `pip freeze > requirements.txt` 
 
-### Run locally
+## Run locally
 `python handler.py`
 
 ## Log in to SLS account
@@ -73,14 +73,14 @@ Update serverless.yml file
 >  "arg": "" \
 >}
 
-### Test SLS locally
+## Test SLS locally
 `sls invoke --function FUNCTIONNAME --path JSONTESTFILENAME.json`
 
 ## Check logs
 `sls logs --function FUNCTIONNAME`
 
 ---
-### Notes
+## Notes
 
 ## List existing deploys
 `sls deploy List`
