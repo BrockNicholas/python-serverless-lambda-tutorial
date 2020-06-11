@@ -71,6 +71,7 @@ Make sure the serverless-python-requirements plugin is included in your serverle
 
 
 ## Put any parameters you want to send to your function in a .json file
+e.g.,
 >{ \
 >  "arg": "" \
 >}
