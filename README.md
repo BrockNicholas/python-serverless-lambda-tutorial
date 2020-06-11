@@ -1,16 +1,16 @@
 ## Create SLS project
-sls create \\ <br />
+`sls create \\ <br />
   --template aws-python3 \\ <br />
   --name PROJECTNAME \\ <br />
-  --path DIRECTORYNAME
+  --path DIRECTORYNAME`
 
 CD into project folder
 
 ## Open project in VSCode
-code .
+`code .`
 
 ## Open built-in terminal
-Ctrl+\`
+`Ctrl+\` `
 
 ## Create virtual environment
 virtualenv venv --python=python3
@@ -31,7 +31,7 @@ service: SERVICENAME
 
 provider:
 &nbsp;&nbsp;name: aws
-&nbsp;&nbsp;&nbsp;&nbsp;runtime: python{VERSIONNUMBER} (e.g., python3.6)
+&nbsp;&nbsp;&nbsp;&nbsp;runtime: python{VERSIONNUMBER} #(e.g., python3.6)
 
 plugins:
 &nbsp;&nbsp;- serverless-python-requirements
