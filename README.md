@@ -1,6 +1,4 @@
-# python-serverless-lambda-tutorial
-The steps that I use for creating and deploying python AWS Lambda functions using serverless.com framework
-
+<pre>
 ## Create SLS project
 sls create \
   --template aws-python3 \
@@ -29,6 +27,12 @@ VSCode -> Update python (at the bottom) to venv version
 
 Update serverless.yml file
 - Change python version to venv version
+
+service: SERVICENAME
+
+provider:
+  name: aws
+  runtime: python{VERSIONNUMBER} (e.g., python3.6)
 
 plugins:
   - serverless-python-requirements
@@ -84,3 +88,4 @@ sls deploy list functions
 
 ## Check SLS metrics
 sls dashboard
+</pre>
