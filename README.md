@@ -48,41 +48,43 @@ Update serverless.yml file
 
 
 ## Install packages
-npm init
-npm install --save serverless-python-requirements
+`npm init`
+`npm install --save serverless-python-requirements`
 
-pip install INCLUDEDPACKAGES
-pip freeze > requirements.txt
+`pip install INCLUDEDPACKAGES`
+`pip freeze > requirements.txt`
 
 ### Run locally
-python handler.py
+`python handler.py`
 
 ## Log in to SLS account
-sls login
+`sls login`
 
 ## Add function to SLS Dashboard
-serverless --org ORGANIZATION --app FUNCTIONNAME
+`sls --org ORGANIZATION --app FUNCTIONNAME`
 
 ## Deploy function
-sls deploy
+`sls deploy`
 
 
-Put JSON params in a test .json file
+## Put any parameters you want to send to your function in a .json file
+`{
+  "arg": ""
+}`
 
 ### Test SLS locally
-sls invoke --function FUNCTIONNAME --path JSONTESTFILENAME.json
+`sls invoke --function FUNCTIONNAME --path JSONTESTFILENAME.json`
 
 ## Check logs
-sls logs --function FUNCTIONNAME
+`sls logs --function FUNCTIONNAME`
 
-
-** Extras **
+---
 
 ## List existing deploys
-sls deploy List
+`sls deploy List`
 
 ## List existing functions
-sls deploy list functions
+`sls deploy list functions`
 
 ## Check SLS metrics
-sls dashboard
+`sls dashboard`
