@@ -29,8 +29,8 @@ Update serverless.yml file
 >service: SERVICENAME
 >
 >provider: \
->  name: aws \
->  runtime: python{VERSIONNUMBER} #(e.g., python3.6)
+>&nbsp;&nbsp;name: aws \
+>&nbsp;&nbsp;runtime: python{VERSIONNUMBER} #(e.g., python3.6)
 >
 >plugins: \
 >  \- serverless-python-requirements
