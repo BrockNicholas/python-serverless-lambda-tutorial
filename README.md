@@ -33,18 +33,18 @@ Update serverless.yml file
 >&nbsp;&nbsp;runtime: python{VERSIONNUMBER} #(e.g., python3.6)
 >
 >plugins: \
->  \- serverless-python-requirements
+>&nbsp;&nbsp;\- serverless-python-requirements
 >
 >package: \
->  include: \
->    \- PACKAGENAME.py \
->  exclude: \
->    \- a/**
+>&nbsp;&nbsp;include: \
+>&nbsp;&nbsp;&nbsp;&nbsp;\- PACKAGENAME.py \
+>&nbsp;&nbsp;exclude: \
+>&nbsp;&nbsp;&nbsp;&nbsp;\- a/**
 >
 >functions: \
->  FUNCTIONNAME: \
->    name: FUNCTIONNAME \
->    handler: handler.HANDLERNAME
+>&nbsp;&nbsp;FUNCTIONNAME: \
+>&nbsp;&nbsp;&nbsp;&nbsp;name: FUNCTIONNAME \
+>&nbsp;&nbsp;&nbsp;&nbsp;handler: handler.HANDLERNAME
 
 
 ## Install packages
