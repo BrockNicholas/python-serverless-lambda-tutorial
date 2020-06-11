@@ -25,27 +25,27 @@ Update variables in handler.py
 At the bottom toolbar of VSCode, change the python interpreter to the `venv` version
 
 Update serverless.yml file
-`
-service: SERVICENAME
 
-provider:
-  name: aws
-  runtime: python{VERSIONNUMBER} #(e.g., python3.6)
+>service: SERVICENAME
+>
+>provider:
+>  name: aws
+>  runtime: python{VERSIONNUMBER} #(e.g., python3.6)
+>
+>plugins:
+>  \- serverless-python-requirements
+>
+>package:
+>  include:
+>    - PACKAGENAME.py
+>  exclude:
+>    - a/**
+>
+>functions:
+>  FUNCTIONNAME:
+>    name: FUNCTIONNAME
+>    handler: handler.HANDLERNAME
 
-plugins:
-  \- serverless-python-requirements
-
-package:
-  include:
-    - PACKAGENAME.py
-  exclude:
-    - a/**
-
-functions:
-  FUNCTIONNAME:
-    name: FUNCTIONNAME
-    handler: handler.HANDLERNAME
-`
 
 ## Install packages
 npm init
