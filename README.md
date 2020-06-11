@@ -49,6 +49,8 @@ Update serverless.yml file
 
 
 ## Install packages
+This will allow you to ship packages in your SLS deployment. \
+Make sure the serverless-python-requirements plugin is included in your serverless.yml file.
 `npm init` \
 `npm install --save serverless-python-requirements` \
 \
