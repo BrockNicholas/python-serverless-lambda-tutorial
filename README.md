@@ -80,6 +80,7 @@ Update serverless.yml file
 `sls logs --function FUNCTIONNAME`
 
 ---
+### Notes
 
 ## List existing deploys
 `sls deploy List`
