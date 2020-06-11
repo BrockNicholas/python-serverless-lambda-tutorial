@@ -13,40 +13,39 @@ CD into project folder
 ``Ctrl+` ``
 
 ## Create virtual environment
-virtualenv venv --python=python3
+`virtualenv venv --python=python3`
 
 ## Enter virtual environment
-source venv/bin/activate
+`source venv/bin/activate`
 
-(deactivate to leave virtual environment)
+(`deactivate` to leave virtual environment)
 
 Update variables in handler.py
 
-VSCode -> Update python (at the bottom) to venv version
+At the bottom toolbar of VSCode, change the python interpreter to the `venv` version
 
 Update serverless.yml file
-- Change python version to venv version
-
+`
 service: SERVICENAME
 
 provider:
-&nbsp;&nbsp;name: aws
-&nbsp;&nbsp;&nbsp;&nbsp;runtime: python{VERSIONNUMBER} #(e.g., python3.6)
+  name: aws
+  runtime: python{VERSIONNUMBER} #(e.g., python3.6)
 
 plugins:
-&nbsp;&nbsp;- serverless-python-requirements
+  \- serverless-python-requirements
 
 package:
-&nbsp;&nbsp;include:
-&nbsp;&nbsp;&nbsp;&nbsp;- PACKAGENAME.py
-&nbsp;&nbsp;exclude:
-&nbsp;&nbsp;&nbsp;&nbsp;- a/**
+  include:
+    - PACKAGENAME.py
+  exclude:
+    - a/**
 
 functions:
-&nbsp;&nbsp;FUNCTIONNAME:
-&nbsp;&nbsp;&nbsp;&nbsp;name: FUNCTIONNAME
-&nbsp;&nbsp;&nbsp;&nbsp;handler: handler.HANDLERNAME
-
+  FUNCTIONNAME:
+    name: FUNCTIONNAME
+    handler: handler.HANDLERNAME
+`
 
 ## Install packages
 npm init
