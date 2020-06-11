@@ -1,8 +1,7 @@
-<pre>
 ## Create SLS project
-sls create \
-  --template aws-python3 \
-  --name PROJECTNAME \
+sls create \\ <br />
+  --template aws-python3 \\ <br />
+  --name PROJECTNAME \\ <br />
   --path DIRECTORYNAME
 
 CD into project folder
@@ -11,7 +10,7 @@ CD into project folder
 code .
 
 ## Open built-in terminal
-Ctrl+`
+Ctrl+\`
 
 ## Create virtual environment
 virtualenv venv --python=python3
@@ -31,22 +30,22 @@ Update serverless.yml file
 service: SERVICENAME
 
 provider:
-  name: aws
-  runtime: python{VERSIONNUMBER} (e.g., python3.6)
+&nbsp;&nbsp;name: aws
+&nbsp;&nbsp;&nbsp;&nbsp;runtime: python{VERSIONNUMBER} <pre>#</pre> (e.g., python3.6)
 
 plugins:
-  - serverless-python-requirements
+&nbsp;&nbsp;- serverless-python-requirements
 
 package:
-  include:
-    - PACKAGENAME.py
-  exclude:
-    - a/**
+&nbsp;&nbsp;include:
+&nbsp;&nbsp;&nbsp;&nbsp;- PACKAGENAME.py
+&nbsp;&nbsp;exclude:
+&nbsp;&nbsp;&nbsp;&nbsp;- a/**
 
 functions:
-  FUNCTIONNAME:
-    name: FUNCTIONNAME
-    handler: handler.HANDLERNAME
+&nbsp;&nbsp;FUNCTIONNAME:
+&nbsp;&nbsp;&nbsp;&nbsp;name: FUNCTIONNAME
+&nbsp;&nbsp;&nbsp;&nbsp;handler: handler.HANDLERNAME
 
 
 ## Install packages
@@ -88,4 +87,3 @@ sls deploy list functions
 
 ## Check SLS metrics
 sls dashboard
-</pre>
