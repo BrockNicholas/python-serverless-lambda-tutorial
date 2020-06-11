@@ -28,22 +28,22 @@ Update serverless.yml file
 
 >service: SERVICENAME
 >
->provider:
->  name: aws
+>provider: \
+>  name: aws \
 >  runtime: python{VERSIONNUMBER} #(e.g., python3.6)
 >
->plugins:
+>plugins: \
 >  \- serverless-python-requirements
 >
->package:
->  include:
->    \- PACKAGENAME.py
->  exclude:
+>package: \
+>  include: \
+>    \- PACKAGENAME.py \
+>  exclude: \
 >    \- a/**
 >
->functions:
->  FUNCTIONNAME:
->    name: FUNCTIONNAME
+>functions: \
+>  FUNCTIONNAME: \
+>    name: FUNCTIONNAME \
 >    handler: handler.HANDLERNAME
 
 
