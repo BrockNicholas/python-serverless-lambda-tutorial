@@ -10,7 +10,7 @@ CD into project folder
 `code .`
 
 ## Open built-in terminal
-<pre>Ctrl+`</pre>
+``Ctrl+` ``
 
 ## Create virtual environment
 virtualenv venv --python=python3
