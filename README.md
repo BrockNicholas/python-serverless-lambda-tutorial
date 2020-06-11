@@ -69,9 +69,9 @@ Update serverless.yml file
 
 
 ## Put any parameters you want to send to your function in a .json file
->{
->&nbsp;&nbsp;"arg": ""
->}
+`{
+"arg": ""
+}`
 
 ### Test SLS locally
 `sls invoke --function FUNCTIONNAME --path JSONTESTFILENAME.json`
