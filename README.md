@@ -1,12 +1,12 @@
 ## Requirements
--Serverless CLI (SLS) \
--AWSCLI (AWS) \
--Pip CLI (Pip) \
--NPM CLI (NPM) \
--Python
+- Serverless CLI (SLS) \
+- AWSCLI (AWS) \
+- Pip CLI (Pip) \
+- NPM CLI (NPM) \
+- Python
 
 ## Suggested
--Visual Studio Code (Code)
+- Visual Studio Code (Code)
 
 
 ## Create SLS project
