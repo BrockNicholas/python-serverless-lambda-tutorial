@@ -1,8 +1,8 @@
 ## Requirements
-- Serverless CLI (SLS) \
-- AWSCLI (AWS) \
-- Pip CLI (Pip) \
-- NPM CLI (NPM) \
+- Serverless CLI (SLS)
+- AWSCLI (AWS)
+- Pip CLI (Pip)
+- NPM CLI (NPM)
 - Python
 
 ## Suggested
