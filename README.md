@@ -8,7 +8,6 @@
 ## Suggested
 - Visual Studio Code (Code)
 
-
 ## Create SLS project
 >sls create \\ \
 >  --template aws-python3 \\ \
